@@ -3,121 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DosBits Studio | Arquitectos Digitales</title>
+    <title>DosBits Studio | Diseño Web con Criterio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="bg-grid"></div>
-
     <header>
         <nav>
-            <div class="logo">DOSBITS<span>STUDIO</span></div>
+            <div class="logo">DOSBITS</div>
             <div class="nav-links">
                 <a href="#servicios">Servicios</a>
                 <a href="#proceso">Proceso</a>
-                <a href="#contacto" class="btn-contact-nav">Contactar</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto" class="btn-contact">Contactar</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <p class="pre-title">// AGENCIA DIGITAL</p>
-                <h1>Convertimos <span class="text-neon">código</span> en <span class="text-pulse">experiencias</span> premium</h1>
-                <p class="hero-text">Creamos y reformamos tu web con tecnología de vanguardia y gestionamos tus redes para proyectar una marca sólida e imparable.</p>
-                <div class="hero-btns">
-                    <a href="#contacto" class="btn-main">Solicitar propuesta</a>
-                    <a href="#proceso" class="btn-secondary">Cómo trabajamos</a>
+            <div class="container">
+                <span class="tagline">— DOSBITS STUDIO</span>
+                <h1>Webs premium para marcas que quieren <span class="italic">crecer mejor</span></h1>
+                <p class="description">Webs corporativas, landings, rediseños y gestión de redes con diseño cuidado, claridad y foco en conversión.</p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn-primary">Solicitar propuesta</a>
+                    <a href="#proyectos" class="btn-text">Ver proyectos</a>
                 </div>
             </div>
         </section>
 
         <section id="servicios" class="services">
-            <div class="section-header">
-                <p class="pre-title">// QUÉ HACEMOS</p>
-                <h2>Soluciones digitales integrales</h2>
-            </div>
-            
-            <div class="grid-cards">
-                <div class="card glass">
-                    <div class="card-icon">⚡</div>
-                    <h3>Creación Web</h3>
-                    <p>Diseño y desarrollo desde cero. Webs corporativas, landings de captación y tiendas online.</p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon">🔧</div>
-                    <h3>Reforma Web</h3>
-                    <p>Actualizamos tu web obsoleta para mejorar su estética, velocidad y conversiones.</p>
-                </div>
-                <div class="card glass">
-                    <div class="card-icon">📱</div>
-                    <h3>Redes Sociales</h3>
-                    <p>Gestión estratégica de tu presencia en redes. Contenido que conecta y vende.</p>
+            <div class="container">
+                <span class="tagline">— SERVICIOS</span>
+                <h2>Diseño y desarrollo web con criterio visual</h2>
+                
+                <div class="grid-services">
+                    <div class="service-card">
+                        <span class="num">01</span>
+                        <h3>Web corporativa</h3>
+                        <p>Para empresas que necesitan una presencia profesional, coherente con su marca y bien estructurada.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="num">02</span>
+                        <h3>Landing de captación</h3>
+                        <p>Páginas enfocadas en presentar una oferta con claridad y facilitar el siguiente paso.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="num">03</span>
+                        <h3>Rediseño web premium</h3>
+                        <p>Actualización de webs desfasadas para darles una imagen más cuidada y una mejor lectura comercial.</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="num">04</span>
+                        <h3>Redes Sociales</h3>
+                        <p>Gestión estratégica de contenidos para elevar la percepción de tu marca en el entorno digital.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contacto" class="contact">
-            <div class="form-wrapper glass">
-                <div class="form-info">
-                    <p class="pre-title">// CONTACTO</p>
-                    <h2>Inicia la transmisión</h2>
-                    <p>Cuéntanos tu proyecto y te responderemos con una propuesta personalizada.</p>
-                    <div class="contact-data">
-                        <p><strong>Email:</strong> dosbitsstudio@gmail.com</p>
-                        <p><strong>Teléfono:</strong> +34 600 000 000</p>
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <span class="tagline">— CONTACTO</span>
+                        <h2>Cuéntame tu proyecto</h2>
+                        <p>Comparte qué necesitas y te responderé con una propuesta alineada con tu marca.</p>
                     </div>
+
+                    <form action="https://formspree.io/f/TU_CORREO_AQUI" method="POST" class="form">
+                        <div class="row">
+                            <input type="text" name="name" placeholder="Tu nombre" required>
+                            <input type="text" name="company" placeholder="Nombre de tu empresa" required>
+                        </div>
+                        <div class="row">
+                            <input type="email" name="email" placeholder="Tu email" required>
+                            <input type="tel" name="phone" placeholder="Tu teléfono">
+                        </div>
+                        <div class="row full">
+                            <select name="type" required>
+                                <option value="" disabled selected>Tipo de proyecto</option>
+                                <option value="web">Web corporativa</option>
+                                <option value="landing">Landing</option>
+                                <option value="rediseno">Rediseño web</option>
+                                <option value="tienda">Tienda online</option>
+                                <option value="aun-no-lo-se">Aún no lo sé</option>
+                            </select>
+                        </div>
+                        <textarea name="message" placeholder="Cuéntame qué necesitas" rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Enviar solicitud</button>
+                    </form>
                 </div>
-
-                <form action="https://formspree.io/f/TU_CORREO_AQUÍ" method="POST" class="futuristic-form">
-                    <div class="input-group">
-                        <label>Tu Nombre</label>
-                        <input type="text" name="name" required placeholder="Ej. Alex Smith">
-                    </div>
-                    <div class="input-group">
-                        <label>Nombre de la Empresa</label>
-                        <input type="text" name="company" required placeholder="Ej. Innova S.L.">
-                    </div>
-                    <div class="input-group">
-                        <label>Tu Correo Electrónico</label>
-                        <input type="email" name="_replyto" required placeholder="alex@empresa.com">
-                    </div>
-                    <div class="input-group">
-                        <label>Tu Teléfono (Opcional)</label>
-                        <input type="tel" name="phone" placeholder="600 123 456">
-                    </div>
-                    
-                    <div class="input-group full-width">
-                        <label>¿Qué necesitas?</label>
-                        <select name="service-type" required>
-                            <option value="" disabled selected>Selecciona una opción</option>
-                            <option value="corporativa">Web Corporativa</option>
-                            <option value="landing">Landing Page</option>
-                            <option value="rediseno">Rediseño/Reforma Web</option>
-                            <option value="tienda">Tienda Online</option>
-                            <option value="social-media">Gestión de Redes Sociales</option>
-                            <option value="no-se">Aún no lo sé</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group full-width">
-                        <label>Explícanos tu visión</label>
-                        <textarea name="message" rows="4" required placeholder="Describe brevemente qué buscas..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Enviar Solicitud <span class="arrow">→</span></button>
-                </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 DosBits Studio. Todos los derechos reservados.</p>
+        <p>© 2024 DosBits Studio — Diseño con propósito.</p>
     </footer>
 
 </body>
