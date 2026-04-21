@@ -3,55 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DosBits Studio | Future Web Design</title>
+    <title>DosBits Studio | Arquitectos Digitales</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="glow-bg"></div>
+    <div class="bg-grid"></div>
 
     <header>
         <nav>
             <div class="logo">DOSBITS<span>STUDIO</span></div>
+            <div class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#proceso">Proceso</a>
+                <a href="#contacto" class="btn-contact-nav">Contactar</a>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Arquitectos del <span class="text-gradient">Espacio Digital</span></h1>
-            <p>Creamos, reformamos y potenciamos tu presencia online con tecnología de vanguardia y gestión de redes sociales.</p>
-            <a href="#contacto" class="btn-main">Solicitar propuesta</a>
+            <div class="hero-content">
+                <p class="pre-title">// AGENCIA DIGITAL</p>
+                <h1>Convertimos <span class="text-neon">código</span> en <span class="text-pulse">experiencias</span> premium</h1>
+                <p class="hero-text">Creamos y reformamos tu web con tecnología de vanguardia y gestionamos tus redes para proyectar una marca sólida e imparable.</p>
+                <div class="hero-btns">
+                    <a href="#contacto" class="btn-main">Solicitar propuesta</a>
+                    <a href="#proceso" class="btn-secondary">Cómo trabajamos</a>
+                </div>
+            </div>
         </section>
 
-        <section id="contacto" class="form-container">
-            <div class="glass-card">
-                <h2>Inicia la Transmisión</h2>
-                <form action="https://formspree.io/f/TU_CORREO@gmail.com" method="POST">
+        <section id="servicios" class="services">
+            <div class="section-header">
+                <p class="pre-title">// QUÉ HACEMOS</p>
+                <h2>Soluciones digitales integrales</h2>
+            </div>
+            
+            <div class="grid-cards">
+                <div class="card glass">
+                    <div class="card-icon">⚡</div>
+                    <h3>Creación Web</h3>
+                    <p>Diseño y desarrollo desde cero. Webs corporativas, landings de captación y tiendas online.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">🔧</div>
+                    <h3>Reforma Web</h3>
+                    <p>Actualizamos tu web obsoleta para mejorar su estética, velocidad y conversiones.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card-icon">📱</div>
+                    <h3>Redes Sociales</h3>
+                    <p>Gestión estratégica de tu presencia en redes. Contenido que conecta y vende.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="form-wrapper glass">
+                <div class="form-info">
+                    <p class="pre-title">// CONTACTO</p>
+                    <h2>Inicia la transmisión</h2>
+                    <p>Cuéntanos tu proyecto y te responderemos con una propuesta personalizada.</p>
+                    <div class="contact-data">
+                        <p><strong>Email:</strong> dosbitsstudio@gmail.com</p>
+                        <p><strong>Teléfono:</strong> +34 600 000 000</p>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/TU_CORREO_AQUÍ" method="POST" class="futuristic-form">
                     <div class="input-group">
-                        <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                        <input type="text" name="empresa" placeholder="Nombre de la Empresa" required>
+                        <label>Tu Nombre</label>
+                        <input type="text" name="name" required placeholder="Ej. Alex Smith">
+                    </div>
+                    <div class="input-group">
+                        <label>Nombre de la Empresa</label>
+                        <input type="text" name="company" required placeholder="Ej. Innova S.L.">
+                    </div>
+                    <div class="input-group">
+                        <label>Tu Correo Electrónico</label>
+                        <input type="email" name="_replyto" required placeholder="alex@empresa.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Tu Teléfono (Opcional)</label>
+                        <input type="tel" name="phone" placeholder="600 123 456">
                     </div>
                     
-                    <div class="input-group">
-                        <input type="email" name="email" placeholder="Tu Correo" required>
-                        <input type="tel" name="telefono" placeholder="Tu Teléfono">
-                    </div>
-
-                    <div class="select-group">
-                        <label for="servicio">¿Qué necesitas?</label>
-                        <select name="servicio" id="servicio" required>
-                            <option value="web-corporativa">Web Corporativa</option>
+                    <div class="input-group full-width">
+                        <label>¿Qué necesitas?</label>
+                        <select name="service-type" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="corporativa">Web Corporativa</option>
                             <option value="landing">Landing Page</option>
-                            <option value="rediseno">Rediseño Web</option>
-                            <option value="tienda-online">Tienda Online</option>
-                            <option value="no-lo-se">Aún no lo sé</option>
+                            <option value="rediseno">Rediseño/Reforma Web</option>
+                            <option value="tienda">Tienda Online</option>
+                            <option value="social-media">Gestión de Redes Sociales</option>
+                            <option value="no-se">Aún no lo sé</option>
                         </select>
                     </div>
 
-                    <textarea name="mensaje" placeholder="Explícanos tu visión..." rows="5" required></textarea>
+                    <div class="input-group full-width">
+                        <label>Explícanos tu visión</label>
+                        <textarea name="message" rows="4" required placeholder="Describe brevemente qué buscas..."></textarea>
+                    </div>
 
-                    <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    <button type="submit" class="btn-submit">Enviar Solicitud <span class="arrow">→</span></button>
                 </form>
             </div>
         </section>
